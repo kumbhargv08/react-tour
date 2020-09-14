@@ -1,0 +1,9 @@
+.App-footer {
+    height: 20px;
+    bottom: 0;
+    position: fixed !important;
+    width: 100%;
+    z-index: 1030;
+    text-align: left;
+    padding: 30px;
+}

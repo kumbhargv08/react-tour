@@ -1,0 +1,91 @@
+.tour-background {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    opacity: 0.5;
+    background: gray;
+}
+
+.tour {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    z-index: 100;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#tour-wrapper {
+    position: absolute;
+    background: white;
+    border: 1px solid #d0cccc;
+    box-shadow: 0 5px 8px 0 rgba(0,0,0,0.2), 0 7px 20px 0 rgba(0,0,0,0.17);
+    transition: all .8s;
+    max-width: 60%;
+    min-width: 30%;
+    opacity: 1;
+    z-index: 999;
+    transform: translateY(0vh);
+    border-radius: 10px;
+}
+
+.tour-footer {
+    color: white;
+    height: 40px;
+    text-align: center;
+}
+
+.tour-close-btn {
+    color: blue;
+    border: none;
+    background: none;
+    float: right;
+}
+
+.tour-btn {
+    display: inline-block;
+    margin-bottom: 0px;
+    font-weight: 400;
+    text-align: center;
+    white-space: nowrap;
+    vertical-align: middle;
+    cursor: pointer;
+    background-image: none;
+    border: 1px solid transparent;
+    padding: 5px 10px;
+    font-size: 14px;
+    line-height: 1.4285;
+    border-radius: 0px;
+    min-width: 50px;
+    min-height: 30px;
+    margin-left: 15px !important;
+    margin-top: 0px !important;
+    color: blue;
+}
+
+.tour-msg {
+    color: blue;
+    margin-top: 20px;
+    margin-bottom: 5px;
+    margin-left: 5px;
+    margin-right: 5px;
+    border: 1px solid lightblue;
+    border-radius: 5px;
+    padding: 5px;
+}
+
+#tour-wrapper::after {
+    content: "";
+    position: absolute;
+    bottom: 100%;
+    left: 20px;
+    margin-left: -5px;
+    border-width: 10px;
+    border-style: solid;
+    border-color: transparent transparent white transparent;
+  }

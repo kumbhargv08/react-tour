@@ -1,0 +1,19 @@
+
+#header{
+  background-color: #133b7d;
+  height: 80px;
+  color: white;
+  z-index: 1030;
+}
+/* .App-header {
+  background-color: #133b7d;
+  height: 80px;
+  color: white;
+  z-index: 1030;
+} */
+
+.Header-button {
+  background: #133b7d;
+  width: 80px;
+  border: 1px solid;
+}
